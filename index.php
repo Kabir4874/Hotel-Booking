@@ -13,7 +13,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="css/common.css">
     <style>
         .availability-form {
             margin-top: -50px;
@@ -285,6 +285,88 @@
         </div>
     </div>
 
+    <!-- our facilities  -->
+
+    <h2 class="mt-5 pt-4 mb-5 text-center fw-bold h-font">OUR FACILITIES</h2>
+
+
+    <div class="container">
+        <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
+            <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+                <img src="images/facilities/IMG_43553.svg" alt="wifi" width="80px">
+                <h5 class="mt-3">Wifi</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+                <img src="images/facilities/IMG_27079.svg" alt="wifi" width="80px">
+                <h5 class="mt-3">Heater</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+                <img src="images/facilities/IMG_41622.svg" alt="wifi" width="80px">
+                <h5 class="mt-3">Television</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+                <img src="images/facilities/IMG_49949.svg" alt="wifi" width="80px">
+                <h5 class="mt-3">AC</h5>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+                <img src="images/facilities/IMG_96423.svg" alt="wifi" width="80px">
+                <h5 class="mt-3">Transport</h5>
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Facilities >>></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonials  -->
+
+    <h2 class="mt-5 pt-4 mb-5 text-center fw-bold h-font">TESTIMONIALS</h2>
+    <div class="container mt-5">
+        <div class="swiper testimonials">
+            <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                        <img src="images/facilities/IMG_27079.svg" alt="person" width="30px">
+                        <h6 class="m-0 ms-2">Random User1</h6>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptates doloremque facilis sequi ipsam ducimus! Nihil veniam fuga odio exercitationem.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                        <img src="images/facilities/IMG_27079.svg" alt="person" width="30px">
+                        <h6 class="m-0 ms-2">Random User1</h6>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptates doloremque facilis sequi ipsam ducimus! Nihil veniam fuga odio exercitationem.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                        <img src="images/facilities/IMG_27079.svg" alt="person" width="30px">
+                        <h6 class="m-0 ms-2">Random User1</h6>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptates doloremque facilis sequi ipsam ducimus! Nihil veniam fuga odio exercitationem.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
 
     <br><br><br>
@@ -301,6 +383,37 @@
             autoplay: {
                 delay: 3500,
                 disableOnInteraction: false,
+            }
+        });
+        var swiper = new Swiper(".testimonials", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "3",
+            loop: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
             }
         });
     </script>
