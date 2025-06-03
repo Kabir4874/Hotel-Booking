@@ -366,11 +366,83 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+        <div class="col-lg-12 text-center mt-5">
+            <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Know More >>></a>
+        </div>
     </div>
 
+    <!-- reach us  -->
+    <h2 class="mt-5 pt-4 mb-5 text-center fw-bold h-font">REACT US</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded">
+                <iframe class="w-100 rounded" height="320" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.1207173954276!2d90.3536305!3d23.778715249999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c096f1a9231f%3A0xb5e9fac257023d35!2sDarussalam%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1748971417957!5m2!1sen!2sbd" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="bg-white p-4 rounded mb-4">
+                    <h5>Call Us</h5>
+                    <a href="tel:+8801886807343" class="d-inline-block mb-2 text-decoration-none text-dark"><i class="bi bi-telephone-fill"></i> +8801886807343</a>
+                    <br>
+                    <a href="tel:+8801886807343" class="d-inline-block text-decoration-none text-dark"><i class="bi bi-telephone-fill"></i> +8801886807343</a>
+                </div>
+                <div class="bg-white p-4 rounded mb-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="d-inline-block mb-3">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="bi bi-twitter me-1"></i> Twitter
+                        </span>
+                    </a>
+                    <br>
+                    <a href="#" class="d-inline-block mb-3">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="bi bi-facebook me-1"></i> Facebook
+                        </span>
+                    </a>
+                    <br>
+                    <a href="#" class="d-inline-block">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="bi bi-instagram me-1"></i> Instagram
+                        </span>
+                    </a>
+                    <br>
 
-    <br><br><br>
-    <br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-white mt-5">
+        <div class="row">
+            <div class="col-lg-4 p-4">
+                <h3 class="h-font fw-bold fs-3 mb-2">OUR HOTEL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque quisquam nulla aspernatur nihil explicabo quaerat aliquam, culpa harum ipsam voluptatem voluptate, repellendus doloremque quidem provident officiis, dolore quo? Nisi?</p>
+            </div>
+            <div class="col-lg-4 p-4">
+                <h5 class="mb-3">Links</h5>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Rooms</a><br>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Facilities</a><br>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Contact Us</a><br>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">About</a>
+            </div>
+            <div class="col-lg-4 p-4">
+                <h5 class="mb-3">Follow Us</h5>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">
+                    <i class="bi bi-facebook me-1"></i> Facebook
+                </a>
+                <br>
+                <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">
+                    <i class="bi bi-instagram me-1"></i> Instagram
+                </a>
+                <br>
+                <a href="#" class="d-inline-block text-dark text-decoration-none">
+                    <i class="bi bi-twitter me-1"></i> Twitter
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="text-center bg-dark text-white p-3 m-0">Designed and Developed by <strong>Kabir Ahmed Ridoy</strong></h6>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
