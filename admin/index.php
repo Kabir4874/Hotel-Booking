@@ -1,3 +1,5 @@
+<?php require('inc/essentials.php');
+require('inc/db_config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,20 +21,39 @@
 
 <body class="bg-light">
     <div class="login-form text-center rounded bg-white shadow overflow-hidden">
-        <form action="">
+        <form method="post">
             <h4 class="bg-dark text-white py-3">ADMIN LOGIN PANEL</h4>
             <div class="p-4">
                 <div class="mb-3">
-                    <input name="admin_name" type="text" class="form-control shadow-none text-center" placeholder="Admin Name">
+                    <input name="name" required type="text" class="form-control shadow-none text-center" placeholder="Admin Name">
                 </div>
                 <div class="mb-4">
-                    <input name="admin_password" type="password" class="form-control shadow-none text-center" placeholder="Password">
+                    <input name="password" required type="password" class="form-control shadow-none text-center" placeholder="Password">
                 </div>
                 <button name="login" type="submit" class="btn text-white custom-bg shadow-none">LOGIN</button>
             </div>
         </form>
     </div>
 
+    <?php
+    if (isset($_POST['login'])) {
+        $frm_data = filtration($_POST);
+
+        $query = 'SELECT * FROM `admin` WHERE `name`=? AND `password`=?';
+        $values = [$frm_data['name'], $frm_data['password']];
+
+        $res = select($query, $values, 'ss');
+        if ($res->num_rows == 1) {
+            $row = mysqli_fetch_assoc($res);
+            session_start();
+            $_SESSION['adminLogin'] = true;
+            $_SESSION['adminId'] = $row['sr_no'];
+            redirect('dashboard.php');
+        } else {
+            alert('error', 'Login Failed - Invalid Credentials');
+        }
+    }
+    ?>
 
 
     <?php require('inc/scripts.php'); ?>
